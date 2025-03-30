@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Reconstruction &mdash; The COBRA Toolbox</title>
@@ -57,6 +58,10 @@
   
 
   
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -64,8 +69,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../index.html"/>
         <link rel="up" title="Functions" href="../index.html"/>
-        <link rel="next" title="Comparison" href="comparison/index.html"/>
-        <link rel="prev" title="optForceGAMS" href="../design/optForceGAMS/index.html"/> 
+        <link rel="next" title="Modelgeneration" href="modelGeneration/index.html"/>
+        <link rel="prev" title="Optforcegams" href="../design/optForceGAMS/index.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,15 +158,17 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../base/index.html">Base</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dataIntegration/index.html">Data integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../design/index.html">Design</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Reconstruction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="comparison/index.html">Comparison</a></li>
-<li class="toctree-l3"><a class="reference internal" href="fastGapFill/index.html">fastGapFill</a></li>
-<li class="toctree-l3"><a class="reference internal" href="growthExpMatch/index.html">growthExpMatch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="modelGeneration/index.html">modelGeneration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rBioNet/index.html">rBioNet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="refinement/index.html">Refinement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="demeter/index.html">Demeter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comparison/index.html">Comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metaboRePort/index.html">Metaboreport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rBioNet/index.html">Rbionet</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
@@ -173,6 +181,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -194,42 +205,14 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Functions</a> &raquo;</li>
-        
-      <li>Reconstruction</li>
-    
-    
+      <li><a href="../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Functions</a></li>
+      <li class="breadcrumb-item active">Reconstruction</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
@@ -237,149 +220,141 @@
             
   <script src="../../_static/js/json-menu.js"></script>
 <style>
-  h1 {font-size:0px;}
+   h1 {font-size:0px;}
 </style><div class="tutorialSectionBox reconstruction">
-  <div class="sectionLogo"><img class="avatar" src="https://king.nuigalway.ie/cobratoolbox/img/icon_reconstruction_wb.png" alt="reconstruction"></div>
-  <div class="sectionTitle"><h3>Reconstruction</h3></div>
-  <div class="row">
-    <div class="col-xs-6">
-      <div><div class="section" id="id1">
-<h1>Reconstruction<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+   <div class="sectionLogo"><img class="avatar" src="https://king.nuigalway.ie/cobratoolbox/img/icon_reconstruction_wb.png" alt="reconstruction"></div>
+   <div class="sectionTitle"><h3>Reconstruction</h3></div>
+   <div class="row">
+      <div class="col-xs-6">
+         <div><section id="id1">
+<h1>Reconstruction<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="modelGeneration/index.html">Modelgeneration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelProperties/index.html">Modelproperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/stoichConsistency/index.html">Stoichconsistency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/massBalance/index.html">Massbalance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/fluxConsistency/index.html">Fluxconsistency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelVerification/index.html">Modelverification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="refinement/index.html">Refinement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="refinement/GPRLogic/index.html">Gprlogic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="demeter/index.html">Demeter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="demeter/suite/index.html">Suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demeter/src/index.html">Src</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fastGapFill/index.html">Fastgapfill</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fastGapFill/AuxillaryFiles/index.html">Auxillaryfiles</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="comparison/index.html">Comparison</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="comparison/modelBorgifier/index.html">modelBorgifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison/modelBorgifier/index.html">Modelborgifier</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="fastGapFill/index.html">fastGapFill</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fastGapFill/AuxillaryFiles/index.html">AuxillaryFiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metaboRePort/index.html">Metaboreport</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metaboRePort/other/index.html">Other</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="growthExpMatch/index.html">growthExpMatch</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modelGeneration/index.html">modelGeneration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/fluxConsistency/index.html">fluxConsistency</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modelGeneration/fluxConsistency/DCA/index.html">DCA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="modelGeneration/fluxConsistency/GREEDY/index.html">GREEDY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="growthExpMatch/index.html">Growthexpmatch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rBioNet/index.html">Rbionet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rBioNet/gui/index.html">Gui</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/massBalance/index.html">massBalance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modelGeneration/massBalance/basicPhysicochemicalData/index.html">basicPhysicochemicalData</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/modelVerification/index.html">modelVerification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelGeneration/stoichConsistency/index.html">stoichConsistency</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rBioNet/index.html">rBioNet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="refinement/index.html">Refinement</a></li>
 </ul>
 </div>
+         </div>
       </div>
-    </div>
-    </div>
-    <div class="col-xs-6">
-      <div class="dropdown dropdown-cobra">
-        <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%;">
-          Function list
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu reconstruction-menu dropdown-scrollable">
-        </ul>
       </div>
-      <script> buildList("https://opencobra.github.io/cobratoolbox/unstable/modules/reconstructionfunctions.json", "reconstruction") </script>
-    </div>
-  </div>
+      <div class="col-xs-6">
+         <div class="dropdown dropdown-cobra">
+            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%;">
+                Function list
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu reconstruction-menu dropdown-scrollable">
+            </ul>
+         </div>
+         <script> buildList("https://opencobra.github.io/cobratoolbox/unstable/modules/reconstructionfunctions.json", "reconstruction") </script>
+      </div>
+   </div>
 </div>
 
-<br><span class="target" id="module-src.reconstruction"></span><dl class="function">
-<dt id="src.reconstruction.gapFind">
-<code class="descname">gapFind</code><span class="sig-paren">(</span><em>model</em>, <em>findNCgaps</em>, <em>verbFlag</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/reconstruction/gapFind.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.reconstruction.gapFind" title="Permalink to this definition">¶</a></dt>
+<br><span class="target" id="module-src.reconstruction"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.reconstruction.gapFind">
+<span class="sig-name descname"><span class="pre">gapFind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">findNCgaps</span></em>, <em class="sig-param"><span class="pre">verbFlag</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/reconstruction/gapFind.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.reconstruction.gapFind" title="Permalink to this definition">¶</a></dt>
 <dd><p>Identifies all blocked metabolites (anything downstream of a gap)
 in a model.  MILP algorithm that finds gaps that may be missed by simple
 inspection of the S matrix. To find every gap in a model, change the rxn
 bounds on all exchange reactions to allow uptake of every metabolite.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[allGaps, rootGaps, downstreamGaps] = gapFind(model, findNCgaps, verbFlag)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-a COBRA model</li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[allGaps, rootGaps, downstreamGaps] = gapFind</strong> (<em>model, findNCgaps, verbFlag</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – a COBRA model</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>findNCgaps</strong> – find no consupmption gaps as well as no production gaps
+(default false)</p></li>
+<li><p><strong>verbFlag</strong> – verbose flag (default false)</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>findNCgaps</strong> &#8211;
-find no consupmption gaps as well as no production gaps
-(default false)</li>
-<li><strong>verbFlag</strong> &#8211;
-verbose flag (default false)</li>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>allGaps</strong> – all gaps found by GapFind</p></li>
+<li><p><strong>rootGaps</strong> – all root no production (and consumption) gaps</p></li>
+<li><p><strong>downstreamGaps</strong> – all downstream gaps</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>allGaps</strong> &#8211;
-all gaps found by GapFind</li>
-<li><strong>rootGaps</strong> &#8211;
-all root no production (and consumption) gaps</li>
-<li><strong>downstreamGaps</strong> &#8211;
-all downstream gaps</li>
-</ul>
-</div></blockquote>
+</dd>
+</dl>
 <p>Based on <cite>Kumar, V. et al. BMC Bioinformatics. 2007 Jun 20;8:212</cite>.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.reconstruction.testPathway">
-<code class="descname">testPathway</code><span class="sig-paren">(</span><em>model</em>, <em>MetIn</em>, <em>MetOut</em>, <em>AdditionalMetsInorOut</em>, <em>ObjectiveOption</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/reconstruction/testPathway.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.reconstruction.testPathway" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.reconstruction.testPathway">
+<span class="sig-name descname"><span class="pre">testPathway</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">MetIn</span></em>, <em class="sig-param"><span class="pre">MetOut</span></em>, <em class="sig-param"><span class="pre">AdditionalMetsInorOut</span></em>, <em class="sig-param"><span class="pre">ObjectiveOption</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/reconstruction/testPathway.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.reconstruction.testPathway" title="Permalink to this definition">¶</a></dt>
 <dd><p>Allows the user to see if given one metabolite <cite>A</cite>,
 downstream metabolite <cite>B</cite> can be made made. Additional sinks can be added
 for co-factors if needed
-<cite>A &#8211;&gt;&#8211;&gt;&#8211;&gt;&#8211;&gt;&#8211;&gt; B</cite></p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[Flux, FBAsolution, model] = testPathway(model, MetIn, MetOut, AdditionalMetsInorOut, ObjectiveOption)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-<li><strong>MetIn</strong> &#8211;
-The input metabolite(s) (<cite>A</cite>)</li>
-<li><strong>MetOut</strong> &#8211;
-The output metabolite (<cite>B</cite>)</li>
+<cite>A –&gt;–&gt;–&gt;–&gt;–&gt; B</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[Flux, FBAsolution, model] = testPathway</strong> (<em>model, MetIn, MetOut, AdditionalMetsInorOut, ObjectiveOption</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – COBRA model structure</p></li>
+<li><p><strong>MetIn</strong> – The input metabolite(s) (<cite>A</cite>)</p></li>
+<li><p><strong>MetOut</strong> – The output metabolite (<cite>B</cite>)</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>AdditionalMetsInorOut</strong> &#8211;
-Additional metabolites for which sinks will be added</li>
-<li><strong>ObjectiveOption</strong> &#8211;
-Boolean:<ul>
-<li>1 = objective will be production of <cite>B</cite> (default)</li>
-<li>0 = use objective in model</li>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>AdditionalMetsInorOut</strong> – Additional metabolites for which sinks will be added</p></li>
+<li><p><strong>ObjectiveOption</strong> – Boolean:</p>
+<ul>
+<li><p>1 = objective will be production of <cite>B</cite> (default)</p></li>
+<li><p>0 = use objective in model</p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Flux</strong> &#8211;
-The rate of <cite>B</cite> production</li>
-<li><strong>FBAsolution</strong> &#8211;
-Solution to the FBA problem</li>
-<li><strong>model</strong> &#8211;
-COBRA model with sinks in it</li>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Flux</strong> – The rate of <cite>B</cite> production</p></li>
+<li><p><strong>FBAsolution</strong> – Solution to the FBA problem</p></li>
+<li><p><strong>model</strong> – COBRA model with sinks in it</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -391,10 +366,10 @@ COBRA model with sinks in it</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="comparison/index.html" class="btn btn-default float-right" title="Comparison" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="modelGeneration/index.html" class="btn btn-default float-right" title="Modelgeneration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../design/optForceGAMS/index.html" class="btn btn-default" title="optForceGAMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../design/optForceGAMS/index.html" class="btn btn-default" title="Optforcegams" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -403,7 +378,7 @@ COBRA model with sinks in it</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -431,10 +406,12 @@ COBRA model with sinks in it</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -453,5 +430,14 @@ COBRA model with sinks in it</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

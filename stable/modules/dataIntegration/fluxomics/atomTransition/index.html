@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>atomTransition &mdash; The COBRA Toolbox</title>
+  <title>Atomtransition &mdash; The COBRA Toolbox</title>
   
 
   
@@ -57,6 +58,10 @@
   
 
   
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -64,7 +69,7 @@
         <link rel="search" title="Search" href="../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../index.html"/>
         <link rel="up" title="Fluxomics" href="../index.html"/>
-        <link rel="next" title="c13solver" href="../c13solver/index.html"/>
+        <link rel="next" title="Atn" href="ATN/index.html"/>
         <link rel="prev" title="Fluxomics" href="../index.html"/> 
 
   
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../../index.html">
+            <a href="../../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,15 +158,21 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../base/index.html">Base</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Data integration</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../chemoInformatics/index.html">ChemoInformatics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Dataintegration</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">Fluxomics</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">atomTransition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../c13solver/index.html">c13solver</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Atomtransition</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ATN/index.html">Atn</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../c13solver/index.html">C13solver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../metanetxMapper/index.html">Metanetxmapper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../transcriptomics/index.html">Transcriptomics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../chemoInformatics/index.html">Chemoinformatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../XomicsToModel/index.html">Xomicstomodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../metaboAnnotator/index.html">Metaboannotator</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../design/index.html">Design</a></li>
@@ -175,6 +187,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -196,150 +211,136 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../../index.html">Data integration</a> &raquo;</li>
-        
-          <li><a href="../index.html">Fluxomics</a> &raquo;</li>
-        
-      <li>atomTransition</li>
-    
-    
+      <li><a href="../../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Dataintegration</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Fluxomics</a></li>
+      <li class="breadcrumb-item active">Atomtransition</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="atomtransition">
-<span id="id1"></span><h1>atomTransition<a class="headerlink" href="#atomtransition" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-src.dataIntegration.fluxomics.atomTransition"></span><dl class="function">
-<dt id="src.dataIntegration.fluxomics.atomTransition.buildAtomTransitionNetwork">
-<code class="descname">buildAtomTransitionNetwork</code><span class="sig-paren">(</span><em>model</em>, <em>rxnfileDir</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/fluxomics/atomTransition/buildAtomTransitionNetwork.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.fluxomics.atomTransition.buildAtomTransitionNetwork" title="Permalink to this definition">¶</a></dt>
-<dd><p>Builds an atom transition network corresponding to a metabolic
-network from reaction stoichiometry and atom mappings.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>ATN = buildAtomTransitionNetwork(model, rxnfileDir)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-Structure with following fields:<ul>
-<li>.S - The <cite>m</cite> x <cite>n</cite> stoichiometric matrix for the metabolic network</li>
-<li>.mets - An <cite>m</cite> x 1 array of metabolite identifiers. Should match
-metabolite identifiers in <cite>rxnfiles</cite>.</li>
-<li>.rxns - An <cite>n</cite> x 1 array of reaction identifiers. Should match
-rxnfile names in <cite>rxnFileDir</cite>.</li>
-<li>.lb -  An <cite>n</cite> x 1 vector of lower bounds on fluxes.</li>
-<li>.ub - An <cite>n</cite> x 1 vector of upper bounds on fluxes.</li>
+  <section id="atomtransition">
+<span id="id1"></span><h1>Atomtransition<a class="headerlink" href="#atomtransition" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ATN/index.html">Atn</a></li>
 </ul>
-</li>
-<li><strong>rxnfileDir</strong> &#8211;
-Path to directory containing <cite>rxnfiles</cite> with atom mappings
-for internal reactions in <cite>S</cite>. File names should
-correspond to reaction identifiers in input <cite>rxns</cite>.</li>
-</ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>ATN</strong> &#8211;
-Structure with following fields:<ul>
-<li>.A - A <cite>p</cite> x <cite>q</cite> sparse incidence matrix for the atom transition
-network, where <cite>p</cite> is the number of atoms and <cite>q</cite> is
-the number of atom transitions.</li>
-<li>.mets - A <cite>p</cite> x 1 cell array of metabolite identifiers to link
-atoms to their metabolites. The order of atoms is the
-same in <cite>A</cite> as in the molfile for each metabolite.</li>
-<li>.rxns - A <cite>q</cite> x 1 cell array of reaction identifiers to link atom
-transitions to their reactions. The order of atom
-transitions is the same in <cite>A</cite> as in the <cite>rxnfile</cite> (with
-atom mappings) for each reaction.</li>
-<li>.elements - A <cite>p</cite> x 1 cell array of element symbols for atoms in <cite>A</cite>.</li>
-</ul>
-</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="src.dataIntegration.fluxomics.atomTransition.extractElementalTransitionNetwork">
-<code class="descname">extractElementalTransitionNetwork</code><span class="sig-paren">(</span><em>ATN</em>, <em>elements</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/fluxomics/atomTransition/extractElementalTransitionNetwork.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.fluxomics.atomTransition.extractElementalTransitionNetwork" title="Permalink to this definition">¶</a></dt>
-<dd><p>Extracts specific chemical elements from an atom transition network.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>ETN = extractElementalTransitionNetwork(ATN, elements)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>ATN</strong> &#8211;
-An atom transition network</li>
-<li><strong>elements</strong> &#8211;
-A cell array of element symbols, e.g., &#8216;C&#8217; for carbon
-or {&#8216;C&#8217; &#8216;O&#8217;} for carbon and oxygen</li>
-</ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>ETN</strong> &#8211;
-An elemental transition network for the specified elements</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="src.dataIntegration.fluxomics.atomTransition.renameDREAMOutputFiles">
-<code class="descname">renameDREAMOutputFiles</code><span class="sig-paren">(</span><em>zipfile</em>, <em>indir</em>, <em>outdir</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/fluxomics/atomTransition/renameDREAMOutputFiles.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.fluxomics.atomTransition.renameDREAMOutputFiles" title="Permalink to this definition">¶</a></dt>
-<dd><p>Replaces DREAM file names with original file names.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>renameDREAMOutputFiles(zipfile, indir, outdir)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>zipfile</strong> &#8211;
-name of zipfile submitted to the DREAM server</li>
-<li><strong>indir</strong> &#8211;
-name of directory containing the DREAM output files</li>
-<li><strong>outdir</strong> &#8211;
-name of directory where renamed files should be placed</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
 </div>
+<span class="target" id="module-src.dataIntegration.fluxomics.atomTransition"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.fluxomics.atomTransition.buildAtomTransitionMultigraph">
+<span class="sig-name descname"><span class="pre">buildAtomTransitionMultigraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">RXNFileDir</span></em>, <em class="sig-param"><span class="pre">options</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/fluxomics/atomTransition/buildAtomTransitionMultigraph.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.fluxomics.atomTransition.buildAtomTransitionMultigraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a matlab digraph object representing an atom transition multigraph
+corresponding to a metabolic network from reaction stoichiometry and atom
+mappings.</p>
+<p>The multigraph nature is due to possible duplicate atom transitions,
+where the same pair of atoms are involved in the same atom transition in
+different reactions.</p>
+<p>The directed nature is due to possible duplicate atom transitions, where
+the same pair of atoms are involved in atom transitions of opposite
+orientation, corresponding to reactions in different directions.</p>
+<p>Note that A = incidence(dATM) returns a  <cite>a</cite> x <cite>t</cite> atom transition
+directed multigraph incidence matrix where <cite>a</cite> is the number of atoms and
+<cite>t</cite> is the number of directed atom transitions. Each atom transition
+inherits the orientation of its corresponding reaction.</p>
+<p>A stoichimetric matrix may be decomposed into a set of atom transitions
+with the following atomic decomposition:</p>
+<blockquote>
+<div><p>N=left(VV^{T}right)^{-1}VAE</p>
+</div></blockquote>
+<p>VV^{T} is a diagonal matrix, where each diagonal entry is the number of
+atoms in each metabolite, so V*V^{T}*N = V*A*E</p>
+<p>With respect to the input, N is the subset of model.S corresponding to atom mapped reactions</p>
+<dl class="simple">
+<dt>With respect to the output V := M2Ai</dt><dd><p>E := Ti2R
+A := incidence(dATM);</p>
+</dd>
+</dl>
+<p>so we have the atomic decomposition M2Ai*M2Ai’<a href="#id2"><span class="problematic" id="id3">*</span></a>N = M2Ai*A*Ti2R</p>
+<dl class="field-list">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[dATM, metAtomMappedBool, rxnAtomMappedBool, M2Ai, Ti2R] = buildAtomTransitionNetwork</strong> (<em>model, RXNFileDir, options</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul>
+<li><p><strong>model</strong> – Directed stoichiometric hypergraph
+Represented by a matlab structure with following fields:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>.S - The <cite>m</cite> x <cite>n</cite> stoichiometric matrix for the metabolic network</p></li>
+<li><p>.mets - An <cite>m</cite> x 1 array of metabolite identifiers. Should match
+metabolite identifiers in <cite>rxnfiles</cite>.</p></li>
+<li><p>.rxns - An <cite>n</cite> x 1 array of reaction identifiers. Should match
+rxnfile names in <cite>rxnFileDir</cite>.</p></li>
+<li><p>.lb -  An <cite>n</cite> x 1 vector of lower bounds on fluxes.</p></li>
+<li><p>.ub - An <cite>n</cite> x 1 vector of upper bounds on fluxes.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>RXNFileDir</strong> – Path to directory containing <cite>rxnfiles</cite> with atom mappings
+for internal reactions in <cite>S</cite>. File names should
+correspond to reaction identifiers in input <cite>rxns</cite>.
+e.g. git clone <a class="reference external" href="https://github.com/opencobra/ctf">https://github.com/opencobra/ctf</a> ~/fork-ctf</p>
+<blockquote>
+<div><p>then RXNFileDir = ~/fork-ctf/rxns/atomMapped</p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>dATM</strong> – Directed atom transition multigraph as a MATLAB digraph structure with the following tables:</p>
+<ul class="simple">
+<li><p>.Nodes — Table of node information, with <cite>p</cite> rows, one for each atom.</p></li>
+<li><p>.Nodes.Atom - unique index for each atom</p></li>
+<li><p>.Nodes.AtomIndex - unique alphanumeric id for each atom by concatenation of the metabolite, atom and element</p></li>
+<li><p>.Nodes.Met - metabolite containing each atom</p></li>
+<li><p>.Nodes.AtomNumber - unique numeric id for each atom in an atom mapping</p></li>
+<li><p>.Nodes.Element - atomic element of each atom</p></li>
+<li><p>.EdgeTable — Table of edge information, with <cite>q</cite> rows, one for each atom transition instance.</p></li>
+<li><p>.EdgeTable.EndNodes - two-column cell array of character vectors that defines the graph edges</p></li>
+<li><p>.EdgeTable.Trans - unique alphanumeric id for each atom transition instance by concatenation of the reaction, head and tail atoms</p></li>
+<li><p>.EdgeTable.TansInstIndex - unique numeric id for each atom transition instance</p></li>
+<li><p>.EdgeTable.dirTransInstIndex - unique numeric id for each directed atom transition instance</p></li>
+<li><p>.EdgeTable.rxns - reaction corresponding to each atom transition</p></li>
+<li><p>.EdgeTable.HeadAtomIndex - head Nodes.AtomIndex</p></li>
+<li><p>.EdgeTable.TailAtomIndex - tail Nodes.AtomIndex</p></li>
+</ul>
+</dd>
+</dl>
+<p>metRXNBool:       <cite>m x 1</cite> boolean vector indicating atom mapped metabolites
+rxnRXNBool:       <cite>n x 1</cite> boolean vector indicating atom mapped reactions
+M2Ai              <cite>m</cite> x <cite>a</cite> matrix mapping each metabolite to an atom in the directed atom transition multigraph
+Ti2R              <cite>t</cite> x <cite>n</cite> matrix mapping each directed atom transition instance to a mapped reaction</p>
+<p>The internal stoichiometric matrix may be decomposition into
+N = (M2Ai*M2Ai)^(-1)*M2Ai*Ti*Ti2R;
+where Ti = incidence(dATM), is incidence matrix of directed atom transition multigraph.</p>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.fluxomics.atomTransition.renameDREAMOutputFiles">
+<span class="sig-name descname"><span class="pre">renameDREAMOutputFiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">zipfile</span></em>, <em class="sig-param"><span class="pre">indir</span></em>, <em class="sig-param"><span class="pre">outdir</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/fluxomics/atomTransition/renameDREAMOutputFiles.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.fluxomics.atomTransition.renameDREAMOutputFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces DREAM file names with original file names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>renameDREAMOutputFiles</strong> (<em>zipfile, indir, outdir</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>zipfile</strong> – name of zipfile submitted to the DREAM server</p></li>
+<li><p><strong>indir</strong> – name of directory containing the DREAM output files</p></li>
+<li><p><strong>outdir</strong> – name of directory where renamed files should be placed</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 
 
            </div>
@@ -351,7 +352,7 @@ name of directory where renamed files should be placed</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../c13solver/index.html" class="btn btn-default float-right" title="c13solver" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ATN/index.html" class="btn btn-default float-right" title="Atn" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-default" title="Fluxomics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -363,7 +364,7 @@ name of directory where renamed files should be placed</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -391,10 +392,12 @@ name of directory where renamed files should be placed</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -413,5 +416,14 @@ name of directory where renamed files should be placed</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

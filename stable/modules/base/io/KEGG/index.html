@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>KEGG &mdash; The COBRA Toolbox</title>
+  <title>Kegg &mdash; The COBRA Toolbox</title>
   
 
   
@@ -57,15 +58,19 @@
   
 
   
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
               href="../../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../index.html"/>
-        <link rel="up" title="IO" href="../index.html"/>
-        <link rel="next" title="Utilities" href="../utilities/index.html"/>
-        <link rel="prev" title="Definitions" href="../definitions/index.html"/> 
+        <link rel="up" title="Io" href="../index.html"/>
+        <link rel="next" title="Python" href="../python/index.html"/>
+        <link rel="prev" title="Bigg" href="../BiGG/index.html"/> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../../index.html">
+            <a href="../../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,19 +158,27 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Base</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../install/index.html">Install</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../index.html">IO</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../BiGG/index.html">BiGG</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../definitions/index.html">Definitions</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">KEGG</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../utilities/index.html">Utilities</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../solvers/index.html">Solvers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../install/index.html">Install</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Io</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../definitions/index.html">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../newt/index.html">Newt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../BiGG/index.html">Bigg</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Kegg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../json/index.html">Json</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../utilities/index.html">Utilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../old/index.html">Old</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../dataIntegration/index.html">Data integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../paths/index.html">Paths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ci/index.html">Ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../cobrarrow/index.html">Cobrarrow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../design/index.html">Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../reconstruction/index.html">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../visualization/index.html">Visualization</a></li>
@@ -177,6 +191,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -198,197 +215,146 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../../index.html">Base</a> &raquo;</li>
-        
-          <li><a href="../index.html">IO</a> &raquo;</li>
-        
-      <li>KEGG</li>
-    
-    
+      <li><a href="../../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Base</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Io</a></li>
+      <li class="breadcrumb-item active">Kegg</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="kegg">
-<span id="id1"></span><h1>KEGG<a class="headerlink" href="#kegg" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-src.base.io.KEGG"></span><dl class="function">
-<dt id="src.base.io.KEGG.createUniversalReactionModel">
-<code class="descname">createUniversalReactionModel</code><span class="sig-paren">(</span><em>KEGGFilename</em>, <em>KEGGBlackList</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/KEGG/createUniversalReactionModel.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.KEGG.createUniversalReactionModel" title="Permalink to this definition">¶</a></dt>
+  <section id="kegg">
+<span id="id1"></span><h1>Kegg<a class="headerlink" href="#kegg" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-src.base.io.KEGG"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.KEGG.createUniversalReactionModel">
+<span class="sig-name descname"><span class="pre">createUniversalReactionModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">KEGGFilename</span></em>, <em class="sig-param"><span class="pre">KEGGBlackList</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/KEGG/createUniversalReactionModel.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.KEGG.createUniversalReactionModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates the <cite>U</cite> matrix using the universal data from the KEGG database</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>KEGG = createUniversalReactionModel(KEGGFilename, KEGGBlackList)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>KEGGFilename</strong> &#8211;
-downloaded from KEGG database (ie. &#8216;reaction.lst&#8217;)</li>
-<li><strong>KEGGBlackList</strong> &#8211;
-KEGG reactions not to use</li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>KEGG = createUniversalReactionModel</strong> (<em>KEGGFilename, KEGGBlackList</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KEGGFilename</strong> – downloaded from KEGG database (ie. ‘reaction.lst’)</p></li>
+<li><p><strong>KEGGBlackList</strong> – KEGG reactions not to use</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>KEGG</strong> &#8211;
-<cite>U</cite> Matrix</li>
-</ul>
-</div></blockquote>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>KEGG</strong> – <cite>U</cite> Matrix</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.KEGG.mapKEGGID2Model">
-<code class="descname">mapKEGGID2Model</code><span class="sig-paren">(</span><em>model</em>, <em>Dictionary</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/KEGG/mapKEGGID2Model.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.KEGG.mapKEGGID2Model" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.KEGG.mapKEGGID2Model">
+<span class="sig-name descname"><span class="pre">mapKEGGID2Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">Dictionary</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/KEGG/mapKEGGID2Model.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.KEGG.mapKEGGID2Model" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function matches the compound abreviation in model and from <cite>CompAbr</cite>
 and connects with the model metabolite the corresponding KEGGID</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>model = mapKEGGID2Model(model, Dictionary)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-<li><strong>Dictionary</strong> &#8211;
-consists of:<ul>
-<li>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</li>
-<li>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>model = mapKEGGID2Model</strong> (<em>model, Dictionary</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – COBRA model structure</p></li>
+<li><p><strong>Dictionary</strong> – consists of:</p>
+<ul>
+<li><p>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</p></li>
+<li><p>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-KEGG model structure</li>
-</ul>
-</div></blockquote>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>model</strong> – KEGG model structure</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.KEGG.mapMetName2KEGGID">
-<code class="descname">mapMetName2KEGGID</code><span class="sig-paren">(</span><em>model</em>, <em>Dictionary</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/KEGG/mapMetName2KEGGID.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.KEGG.mapMetName2KEGGID" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.KEGG.mapMetName2KEGGID">
+<span class="sig-name descname"><span class="pre">mapMetName2KEGGID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">Dictionary</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/KEGG/mapMetName2KEGGID.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.KEGG.mapMetName2KEGGID" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function maps names of metabolites to KEGG IDs.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>model = mapMetName2KEGGID(model, Dictionary)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-KEGG model structure</li>
-<li><strong>Dictionary</strong> &#8211;
-consists of:<ul>
-<li>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</li>
-<li>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>model = mapMetName2KEGGID</strong> (<em>model, Dictionary</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – KEGG model structure</p></li>
+<li><p><strong>Dictionary</strong> – consists of:</p>
+<ul>
+<li><p>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</p></li>
+<li><p>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-</ul>
-</div></blockquote>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>model</strong> – COBRA model structure</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.KEGG.transformKEGG2Model">
-<code class="descname">transformKEGG2Model</code><span class="sig-paren">(</span><em>modelKEGG</em>, <em>dictionary</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/KEGG/transformKEGG2Model.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.KEGG.transformKEGG2Model" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.KEGG.transformKEGG2Model">
+<span class="sig-name descname"><span class="pre">transformKEGG2Model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">modelKEGG</span></em>, <em class="sig-param"><span class="pre">dictionary</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/KEGG/transformKEGG2Model.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.KEGG.transformKEGG2Model" title="Permalink to this definition">¶</a></dt>
 <dd><p>Translates the metabolites from KEGG to cobra model names.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>model = mapMetName2KEGGID(model, Dictionary)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-KEGG model structure</li>
-<li><strong>Dictionary</strong> &#8211;
-consists of:<ul>
-<li>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</li>
-<li>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>model = mapMetName2KEGGID</strong> (<em>model, Dictionary</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – KEGG model structure</p></li>
+<li><p><strong>Dictionary</strong> – consists of:</p>
+<ul>
+<li><p>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</p></li>
+<li><p>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-</ul>
-</div></blockquote>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>model</strong> – COBRA model structure</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.KEGG.transformModel2KEGG">
-<code class="descname">transformModel2KEGG</code><span class="sig-paren">(</span><em>model</em>, <em>Dictionary</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/KEGG/transformModel2KEGG.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.KEGG.transformModel2KEGG" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.KEGG.transformModel2KEGG">
+<span class="sig-name descname"><span class="pre">transformModel2KEGG</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">Dictionary</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/KEGG/transformModel2KEGG.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.KEGG.transformModel2KEGG" title="Permalink to this definition">¶</a></dt>
 <dd><p>Replaces <cite>model.mets</cite> with <cite>model.metKEGGID</cite>. If no KEGGID
 defined, the empty cell will be replaced with metabolite abreviation.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>modelKEGG = transformModel2KEGG(model, Dictionary)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-<li><strong>Dictionary</strong> &#8211;
-consists of:<ul>
-<li>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</li>
-<li>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>modelKEGG = transformModel2KEGG</strong> (<em>model, Dictionary</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – COBRA model structure</p></li>
+<li><p><strong>Dictionary</strong> – consists of:</p>
+<ul>
+<li><p>CompAbr = Dictionary(:, 1): List of compounds abreviation (non-compartelized)</p></li>
+<li><p>KEGGID = Dictionary(:, 2): List of KEGGIDs for compounds in <cite>CompAbr</cite></p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>modelKEGG</strong> &#8211;
-KEGG model structure</li>
-</ul>
-</div></blockquote>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>modelKEGG</strong> – KEGG model structure</p>
+</dd>
+</dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -400,10 +366,10 @@ KEGG model structure</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../utilities/index.html" class="btn btn-default float-right" title="Utilities" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../python/index.html" class="btn btn-default float-right" title="Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../definitions/index.html" class="btn btn-default" title="Definitions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../BiGG/index.html" class="btn btn-default" title="Bigg" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -412,7 +378,7 @@ KEGG model structure</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -440,10 +406,12 @@ KEGG model structure</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -462,5 +430,14 @@ KEGG model structure</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

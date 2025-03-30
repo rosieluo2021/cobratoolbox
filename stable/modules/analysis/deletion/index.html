@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Deletion &mdash; The COBRA Toolbox</title>
@@ -57,6 +58,10 @@
   
 
   
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -64,8 +69,8 @@
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../index.html"/>
         <link rel="up" title="Analysis" href="../index.html"/>
-        <link rel="next" title="Dynamic FBA" href="../dynamicFBA/index.html"/>
-        <link rel="prev" title="Coupling" href="../coupling/index.html"/> 
+        <link rel="next" title="Syntheticlethals" href="Syntheticlethals/index.html"/>
+        <link rel="prev" title="Graphhypergraphconversion" href="../topology/graphHypergraphConversion/index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../index.html">
+            <a href="../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -151,38 +157,49 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Analysis</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../coupling/index.html">Coupling</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Deletion</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../dynamicFBA/index.html">Dynamic FBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../exploration/index.html">Exploration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FBA/index.html">FBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../findMIIS/index.html">findMIIS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../fluxEnrichmentAnalysis/index.html">fluxEnrichmentAnalysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FVA/index.html">FVA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../geometricFBA/index.html">geometricFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../gMCS/index.html">gMCS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../KLdistance/index.html">KLdistance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../mdFBA/index.html">mdFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../MOMA/index.html">MOMA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../multiSpecies/index.html">MultiSpecies</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../parsimoniousFBA/index.html">parsimoniousFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../relaxedFBA/index.html">relaxedFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rFBA/index.html">rFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rMTA/index.html">rMTA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../robustnessAnalysis/index.html">robustnessAnalysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../ROOM/index.html">ROOM</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../rumba/index.html">rumba</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../sampling/index.html">Sampling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../sparseFBA/index.html">sparseFBA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../subspaces/index.html">Subspaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../thermo/index.html">Thermo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dynamicFBA/index.html">Dynamicfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fluxEnrichmentAnalysis/index.html">Fluxenrichmentanalysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../topology/index.html">Topology</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Deletion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Syntheticlethals/index.html">Syntheticlethals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../persephone/index.html">Persephone</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../transport/index.html">Transport</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../uFBA/index.html">uFBA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../parsimoniousFBA/index.html">Parsimoniousfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sparseFBA/index.html">Sparsefba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../relaxedFBA/index.html">Relaxedfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sampling/index.html">Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../percentileCalc/index.html">Percentilecalc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rumba/index.html">Rumba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../multiSpecies/index.html">Multispecies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rFBA/index.html">Rfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ROOM/index.html">Room</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QFCA/index.html">Qfca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nutritionAlgorithm/index.html">Nutritionalgorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../geometricFBA/index.html">Geometricfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wholeBody/index.html">Wholebody</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermo/index.html">Thermo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exploration/index.html">Exploration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../igemRNA/index.html">Igemrna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../findMIIS/index.html">Findmiis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../KLdistance/index.html">Kldistance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../subspaces/index.html">Subspaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uFBA/index.html">Ufba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../MOMA/index.html">Moma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../coupling/index.html">Coupling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gMCS/index.html">Gmcs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ICONGEMs/index.html">Icongems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FBA/index.html">Fba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mdFBA/index.html">Mdfba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../robustnessAnalysis/index.html">Robustnessanalysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FVA/index.html">Fva</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rMTA/index.html">Rmta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fastForest/index.html">Fastforest</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../base/index.html">Base</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../dataIntegration/index.html">Data integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../design/index.html">Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../reconstruction/index.html">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../visualization/index.html">Visualization</a></li>
@@ -195,6 +212,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -216,226 +236,157 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../index.html">Analysis</a> &raquo;</li>
-        
-      <li>Deletion</li>
-    
-    
+      <li><a href="../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Analysis</a></li>
+      <li class="breadcrumb-item active">Deletion</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="deletion">
-<span id="id1"></span><h1>Deletion<a class="headerlink" href="#deletion" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-src.analysis.deletion"></span><dl class="function">
-<dt id="src.analysis.deletion.deleteModelGenes">
-<code class="descname">deleteModelGenes</code><span class="sig-paren">(</span><em>model</em>, <em>geneList</em>, <em>downRegFraction</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/analysis/deletion/deleteModelGenes.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.analysis.deletion.deleteModelGenes" title="Permalink to this definition">¶</a></dt>
-<dd><p>Deletes one or more genes and constrain the reactions
-affected to zero and appends &#8216;_deleted&#8217; to the gene(s)</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[model, hasEffect, constrRxnNames, deletedGenes] = deleteModelGenes(model, geneList, downRegFraction)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model with the appropriate constrains for a
-particular condition</li>
+  <section id="deletion">
+<span id="id1"></span><h1>Deletion<a class="headerlink" href="#deletion" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Syntheticlethals/index.html">Syntheticlethals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Syntheticlethals/Fast-SL/index.html">Fast-sl</a></li>
 </ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>geneList</strong> &#8211;
-List of genes to be deleted (Default =  all genes in model)</li>
-<li><strong>downRegFraction</strong> &#8211;
-Fraction of the original bounds that the reactions
-corresponding to downregulated genes will be assigned
-(Default = 0 corresponding to a full deletion)</li>
+</li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model with the selected genes deleted</li>
-<li><strong>hasEffect</strong> &#8211;
-True if the gene deletion has an effect on the model</li>
-<li><strong>constrRxnNames</strong> &#8211;
-Reactions that are associated to the genes in <cite>geneList</cite></li>
-<li><strong>deletedGenes</strong> &#8211;
-The list of genes removed from the model.</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="src.analysis.deletion.doubleGeneDeletion">
-<code class="descname">doubleGeneDeletion</code><span class="sig-paren">(</span><em>model</em>, <em>method</em>, <em>geneList1</em>, <em>geneList2</em>, <em>printLevel</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/analysis/deletion/doubleGeneDeletion.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.analysis.deletion.doubleGeneDeletion" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs double gene deletion analysis using FBA, MOMA or linear MOMA</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[grRatioDble, grRateKO, grRateWT] = doubleGeneDeletion(model, method, geneList1, geneList2, printLevel)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure</li>
-</ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>method</strong> &#8211;
-Either &#8216;FBA&#8217; (default), &#8216;MOMA&#8217; or &#8216;lMOMA&#8217;</li>
-<li><strong>geneList1</strong> &#8211;
-List of query genes to be deleted (default = all genes)</li>
-<li><strong>geneList2</strong> &#8211;
-List of target genes to be deleted (default = geneList1)</li>
-<li><strong>printLevel</strong> &#8211;
-Level of verbose output (default = 0)</li>
-</ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>grRatioDble</strong> &#8211;
-Computed growth rate ratio between double deletion strain
-and wild type</li>
-<li><strong>grRateKO</strong> &#8211;
-Double deletion strain growth rates (1/h)</li>
-<li><strong>grRateWT</strong> &#8211;
-Wild type growth rate (1/h)</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="src.analysis.deletion.singleGeneDeletion">
-<code class="descname">singleGeneDeletion</code><span class="sig-paren">(</span><em>model</em>, <em>method</em>, <em>geneList</em>, <em>verbFlag</em>, <em>uniqueGene</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/analysis/deletion/singleGeneDeletion.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.analysis.deletion.singleGeneDeletion" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs single gene deletion analysis using FBA, MOMA or linearMOMA</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[grRatio, grRateKO, grRateWT, hasEffect, delRxns, fluxSolution] = singleGeneDeletion(model, method, geneList, verbFlag)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure including gene-reaction associations</li>
-</ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>method</strong> &#8211;
-Either &#8216;FBA&#8217;, &#8216;MOMA&#8217; or &#8216;lMOMA&#8217; (Default = &#8216;FBA&#8217;)</li>
-<li><strong>geneList</strong> &#8211;
-List of genes to be deleted (default = all genes)</li>
-<li><strong>verbFlag</strong> &#8211;
-Verbose output (Default false)</li>
-<li><strong>uniqueGene</strong> &#8211;
-Run unique gene deletion (default = 0).</li>
-</ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>grRatio</strong> &#8211;
-Computed growth rate ratio between deletion strain and wild type</li>
-<li><strong>grRateKO</strong> &#8211;
-Deletion strain growth rates (1/h)</li>
-<li><strong>grRateWT</strong> &#8211;
-Wild type growth rate (1/h)</li>
-<li><strong>hasEffect</strong> &#8211;
-Does a gene deletion affect anything (i.e. are any reactions
-removed from the model)</li>
-<li><strong>delRxns</strong> &#8211;
-List of deleted reactions for each gene <cite>KO</cite></li>
-<li><strong>fluxSolution</strong> &#8211;
-FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="src.analysis.deletion.singleRxnDeletion">
-<code class="descname">singleRxnDeletion</code><span class="sig-paren">(</span><em>model</em>, <em>method</em>, <em>rxnList</em>, <em>verbFlag</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/analysis/deletion/singleRxnDeletion.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.analysis.deletion.singleRxnDeletion" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs single reaction deletion analysis using FBA, MOMA or linearMOMA</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[grRatio, grRateKO, grRateWT, hasEffect, delRxn, fluxSolution] = singleRxnDeletion(model, method, rxnList, verbFlag)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model structure including reaction names</li>
-</ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>method</strong> &#8211;
-Either &#8216;FBA&#8217;, &#8216;MOMA&#8217;, or &#8216;lMOMA&#8217; (Default = &#8216;FBA&#8217;)</li>
-<li><strong>rxnList</strong> &#8211;
-List of reactions to be deleted (Default = all reactions)</li>
-<li><strong>verbFlag</strong> &#8211;
-Verbose output (Default = false)</li>
-</ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>grRatio</strong> &#8211;
-Computed growth rate ratio between deletion strain and wild type</li>
-<li><strong>grRateKO</strong> &#8211;
-Deletion strain growth rates (1/h)</li>
-<li><strong>grRateWT</strong> &#8211;
-Wild type growth rate (1/h)</li>
-<li><strong>hasEffect</strong> &#8211;
-Does a reaction deletion affect anything</li>
-<li><strong>delRxn</strong> &#8211;
-Deleted reaction</li>
-<li><strong>fluxSolution</strong> &#8211;
-FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
-</ul>
-</div></blockquote>
-</dd></dl>
-
 </div>
+<span class="target" id="module-src.analysis.deletion"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.analysis.deletion.deleteModelGenes">
+<span class="sig-name descname"><span class="pre">deleteModelGenes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">geneList</span></em>, <em class="sig-param"><span class="pre">downRegFraction</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/deletion/deleteModelGenes.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.analysis.deletion.deleteModelGenes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes one or more genes and constrain the reactions
+affected to zero and appends ‘_deleted’ to the gene(s)</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[model, hasEffect, constrRxnNames, deletedGenes] = deleteModelGenes</strong> (<em>model, geneList, downRegFraction</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – COBRA model with the appropriate constrains for a
+particular condition</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>geneList</strong> – List of genes to be deleted (Default =  all genes in model)</p></li>
+<li><p><strong>downRegFraction</strong> – Fraction of the original bounds that the reactions
+corresponding to downregulated genes will be assigned
+(Default = 0 corresponding to a full deletion)</p></li>
+</ul>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – COBRA model with the selected genes deleted</p></li>
+<li><p><strong>hasEffect</strong> – True if the gene deletion has an effect on the model</p></li>
+<li><p><strong>constrRxnNames</strong> – Reactions that are associated to the genes in <cite>deletedGenes</cite></p></li>
+<li><p><strong>deletedGenes</strong> – The list of genes removed from the model.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.analysis.deletion.doubleGeneDeletion">
+<span class="sig-name descname"><span class="pre">doubleGeneDeletion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">method</span></em>, <em class="sig-param"><span class="pre">geneList1</span></em>, <em class="sig-param"><span class="pre">geneList2</span></em>, <em class="sig-param"><span class="pre">printLevel</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/deletion/doubleGeneDeletion.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.analysis.deletion.doubleGeneDeletion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs double gene deletion analysis using FBA, MOMA or linear MOMA</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[grRatioDble, grRateKO, grRateWT] = doubleGeneDeletion</strong> (<em>model, method, geneList1, geneList2, printLevel</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – COBRA model structure</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – Either ‘FBA’ (default), ‘MOMA’ or ‘lMOMA’</p></li>
+<li><p><strong>geneList1</strong> – List of query genes to be deleted (default = all genes)</p></li>
+<li><p><strong>geneList2</strong> – List of target genes to be deleted (default = geneList1)</p></li>
+<li><p><strong>printLevel</strong> – Level of verbose output (default = 0)</p></li>
+</ul>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>grRatioDble</strong> – Computed growth rate ratio between double deletion strain
+and wild type</p></li>
+<li><p><strong>grRateKO</strong> – Double deletion strain growth rates (1/h)</p></li>
+<li><p><strong>grRateWT</strong> – Wild type growth rate (1/h)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.analysis.deletion.singleGeneDeletion">
+<span class="sig-name descname"><span class="pre">singleGeneDeletion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">method</span></em>, <em class="sig-param"><span class="pre">geneList</span></em>, <em class="sig-param"><span class="pre">verbFlag</span></em>, <em class="sig-param"><span class="pre">uniqueGene</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/deletion/singleGeneDeletion.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.analysis.deletion.singleGeneDeletion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs single gene deletion analysis using FBA, MOMA or linearMOMA</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[grRatio, grRateKO, grRateWT, hasEffect, delRxns, fluxSolution] = singleGeneDeletion</strong> (<em>model, method, geneList, verbFlag</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – COBRA model structure including gene-reaction associations</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – Either ‘FBA’, ‘MOMA’ or ‘lMOMA’ (Default = ‘FBA’)</p></li>
+<li><p><strong>geneList</strong> – List of genes to be deleted (default = all genes)</p></li>
+<li><p><strong>verbFlag</strong> – Verbose output (Default false)</p></li>
+<li><p><strong>uniqueGene</strong> – Run unique gene deletion (default = 0).</p></li>
+</ul>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>grRatio</strong> – Computed growth rate ratio between deletion strain and wild type</p></li>
+<li><p><strong>grRateKO</strong> – Deletion strain growth rates (1/h)</p></li>
+<li><p><strong>grRateWT</strong> – Wild type growth rate (1/h)</p></li>
+<li><p><strong>hasEffect</strong> – Does a gene deletion affect anything (i.e. are any reactions
+removed from the model)</p></li>
+<li><p><strong>delRxns</strong> – List of deleted reactions for each gene <cite>KO</cite></p></li>
+<li><p><strong>fluxSolution</strong> – FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.analysis.deletion.singleRxnDeletion">
+<span class="sig-name descname"><span class="pre">singleRxnDeletion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">method</span></em>, <em class="sig-param"><span class="pre">rxnList</span></em>, <em class="sig-param"><span class="pre">verbFlag</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/deletion/singleRxnDeletion.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.analysis.deletion.singleRxnDeletion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs single reaction deletion analysis using FBA, MOMA or linearMOMA</p>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[grRatio, grRateKO, grRateWT, hasEffect, delRxn, fluxSolution] = singleRxnDeletion</strong> (<em>model, method, rxnList, verbFlag</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – COBRA model structure including reaction names</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – Either ‘FBA’, ‘MOMA’, or ‘lMOMA’ (Default = ‘FBA’)</p></li>
+<li><p><strong>rxnList</strong> – List of reactions to be deleted (Default = all reactions)</p></li>
+<li><p><strong>verbFlag</strong> – Verbose output (Default = false)</p></li>
+</ul>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>grRatio</strong> – Computed growth rate ratio between deletion strain and wild type</p></li>
+<li><p><strong>grRateKO</strong> – Deletion strain growth rates (1/h)</p></li>
+<li><p><strong>grRateWT</strong> – Wild type growth rate (1/h)</p></li>
+<li><p><strong>hasEffect</strong> – Does a reaction deletion affect anything</p></li>
+<li><p><strong>delRxn</strong> – Deleted reaction</p></li>
+<li><p><strong>fluxSolution</strong> – FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 
 
            </div>
@@ -447,10 +398,10 @@ FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dynamicFBA/index.html" class="btn btn-default float-right" title="Dynamic FBA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Syntheticlethals/index.html" class="btn btn-default float-right" title="Syntheticlethals" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../coupling/index.html" class="btn btn-default" title="Coupling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../topology/graphHypergraphConversion/index.html" class="btn btn-default" title="Graphhypergraphconversion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -459,7 +410,7 @@ FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -487,10 +438,12 @@ FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -509,5 +462,14 @@ FBA/MOMA/lMOMA fluxes for <cite>KO</cite> strains</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

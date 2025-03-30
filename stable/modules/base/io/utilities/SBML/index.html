@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SBML-utilities &mdash; The COBRA Toolbox</title>
+  <title>Sbml &mdash; The COBRA Toolbox</title>
   
 
   
@@ -57,6 +58,10 @@
   
 
   
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -64,7 +69,7 @@
         <link rel="search" title="Search" href="../../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../../index.html"/>
         <link rel="up" title="Utilities" href="../index.html"/>
-        <link rel="next" title="Solvers" href="../../../solvers/index.html"/>
+        <link rel="next" title="Old" href="../../old/index.html"/>
         <link rel="prev" title="Utilities" href="../index.html"/> 
 
   
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../../../index.html">
+            <a href="../../../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,22 +158,30 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../../index.html">Base</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../../install/index.html">Install</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../../index.html">IO</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../../BiGG/index.html">BiGG</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../definitions/index.html">Definitions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../KEGG/index.html">KEGG</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../index.html">Utilities</a><ul class="current">
-<li class="toctree-l5 current"><a class="current reference internal" href="#">SBML-utilities</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../solvers/index.html">Solvers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../install/index.html">Install</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../index.html">Io</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../definitions/index.html">Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../newt/index.html">Newt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../BiGG/index.html">Bigg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../KEGG/index.html">Kegg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../json/index.html">Json</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html">Utilities</a><ul class="current">
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Sbml</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../../dataIntegration/index.html">Data integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../old/index.html">Old</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../paths/index.html">Paths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ci/index.html">Ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../utilities/index.html">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../codeConsistency/index.html">Codeconsistency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../cobrarrow/index.html">Cobrarrow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../dataIntegration/index.html">Dataintegration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../design/index.html">Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../reconstruction/index.html">Reconstruction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../visualization/index.html">Visualization</a></li>
@@ -180,6 +194,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -201,253 +218,183 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../../../index.html">Base</a> &raquo;</li>
-        
-          <li><a href="../../index.html">IO</a> &raquo;</li>
-        
-          <li><a href="../index.html">Utilities</a> &raquo;</li>
-        
-      <li>SBML-utilities</li>
-    
-    
+      <li><a href="../../../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Base</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Io</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Utilities</a></li>
+      <li class="breadcrumb-item active">Sbml</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sbml-utilities">
-<span id="id1"></span><h1>SBML-utilities<a class="headerlink" href="#sbml-utilities" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-src.base.io.utilities.SBML"></span><dl class="function">
-<dt id="src.base.io.utilities.SBML.convertSBMLID">
-<code class="descname">convertSBMLID</code><span class="sig-paren">(</span><em>str</em>, <em>toSBML</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/convertSBMLID.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.convertSBMLID" title="Permalink to this definition">¶</a></dt>
+  <section id="sbml">
+<span id="id1"></span><h1>Sbml<a class="headerlink" href="#sbml" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-src.base.io.utilities.SBML"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.convertSBMLID">
+<span class="sig-name descname"><span class="pre">convertSBMLID</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">str</span></em>, <em class="sig-param"><span class="pre">toSBML</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/convertSBMLID.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.convertSBMLID" title="Permalink to this definition">¶</a></dt>
 <dd><p>CONVERTSBMLID converts the given str to a valid SBML ID
-<strong>Usage</strong></p>
-<blockquote>
-<div>convertedstr = convertSBMLID(str,toSBML)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>str</strong> &#8211;
-The String to convert</li>
-</ul>
-</div></blockquote>
-<p><strong>Optional input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>toSBML</strong> &#8211;
-Whether to convert to SBML format (or undo a
-conversion) (default true, ie convert to SBML)</li>
-</ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>convertedstr</strong> &#8211;
-The converted String.</li>
-</ul>
-</div></blockquote>
+:USAGE: <strong>convertedstr = convertSBMLID</strong> (<em>str,toSBML</em>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">INPUT</dt>
+<dd class="field-odd"><p><strong>str</strong> – The String to convert</p>
+</dd>
+<dt class="field-even">OPTIONAL INPUT</dt>
+<dd class="field-even"><p><strong>toSBML</strong> – Whether to convert to SBML format (or undo a
+conversion) (default true, ie convert to SBML)</p>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><p><strong>convertedstr</strong> – The converted String.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.utilities.SBML.getBioQualifiers">
-<code class="descname">getBioQualifiers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/getBioQualifiers.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.getBioQualifiers" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.getBioQualifiers">
+<span class="sig-name descname"><span class="pre">getBioQualifiers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/getBioQualifiers.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.getBioQualifiers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of possible bioqualifiers</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>annotationQualifiers = getBioQualifiers()</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>bioQualifiers</strong> &#8211;
-A cell array of bioqualifier strings in descending order.</li>
-<li><strong>standardQualifiers</strong> &#8211;
-A n x 2 cell array with the first column representing the standard identifiers and the second column representing the alternative name.</li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>annotationQualifiers = getBioQualifiers()</strong></p>
+</dd>
+<dt class="field-even">OUTPUT</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>bioQualifiers</strong> – A cell array of bioqualifier strings in descending order.</p></li>
+<li><p><strong>standardQualifiers</strong> – A n x 2 cell array with the first column representing the standard identifiers and the second column representing the alternative name.</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.utilities.SBML.getDataBases">
-<code class="descname">getDataBases</code><span class="sig-paren">(</span><em>Ressources</em>, <em>qualifier</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/getDataBases.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.getDataBases" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.getDataBases">
+<span class="sig-name descname"><span class="pre">getDataBases</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Ressources</span></em>, <em class="sig-param"><span class="pre">qualifier</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/getDataBases.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.getDataBases" title="Permalink to this definition">¶</a></dt>
 <dd><p>getDataBases extracts database and correspdoning id from a ressource string in an sbml
-<strong>Usage</strong></p>
-<blockquote>
-<div>[databases,ids,qualifiers] = getDataBases(Ressource,qualifier)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Ressources</strong> &#8211;
-The Ressource String(s) as a cell array</li>
-<li><strong>qualifier</strong> &#8211;
-The bio-qualifier of the ressource</li>
+:USAGE: <strong>[databases,ids,qualifiers] = getDataBases</strong> (<em>Ressource,qualifier</em>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">INPUT</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Ressources</strong> – The Ressource String(s) as a cell array</p></li>
+<li><p><strong>qualifier</strong> – The bio-qualifier of the ressource</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>databases</strong> &#8211;
-The databases of the ressources</li>
-<li><strong>ids</strong> &#8211;
-The identifiers of the ressource strings</li>
-<li><strong>qualifier</strong> &#8211;
-The bio-qualifiers associated (the same as the input)</li>
+</dd>
+<dt class="field-even">OUTPUT</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>databases</strong> – The databases of the ressources</p></li>
+<li><p><strong>ids</strong> – The identifiers of the ressource strings</p></li>
+<li><p><strong>qualifier</strong> – The bio-qualifiers associated (the same as the input)</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Currently two different schemes are accepted:
+<p class="admonition-title">Note</p>
+<p>Currently two different schemes are accepted:
 <a class="reference external" href="urn:miriam:DatabaeID:EntryID">urn:miriam:DatabaeID:EntryID</a>
 <a class="reference external" href="https://identifiers.org/databaseid/EntryID">https://identifiers.org/databaseid/EntryID</a>
 The correctness of the entries is NOT checked!</p>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.utilities.SBML.makeSBMLAnnotationString">
-<code class="descname">makeSBMLAnnotationString</code><span class="sig-paren">(</span><em>model</em>, <em>id</em>, <em>fieldentries</em>, <em>position</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/makeSBMLAnnotationString.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.makeSBMLAnnotationString" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.makeSBMLAnnotationString">
+<span class="sig-name descname"><span class="pre">makeSBMLAnnotationString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">id</span></em>, <em class="sig-param"><span class="pre">fieldentries</span></em>, <em class="sig-param"><span class="pre">position</span></em>, <em class="sig-param"><span class="pre">mergeAnnotations</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/makeSBMLAnnotationString.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.makeSBMLAnnotationString" title="Permalink to this definition">¶</a></dt>
 <dd><p>makeSBMLAnnotationString gives the annotationString for an SBML based on the fields in the model</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[annotationString, notes] = makeSBMLAnnotationString(model,id,fieldentries,position)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-the model to extract the data</li>
-<li><strong>id</strong> &#8211;
-the ID of the entity</li>
-<li><strong>fieldentries</strong> &#8211;
-either a char indicating the field
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[annotationString, notes] = makeSBMLAnnotationString</strong> (<em>model,id,fieldentries,position</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – the model to extract the data</p></li>
+<li><p><strong>id</strong> – the ID of the entity</p></li>
+<li><p><strong>fieldentries</strong> – either a char indicating the field
 (prot,met,rxn,comp,gene), or a cell array with X{:,1}
 being field IDs and X{:,2} being bioql qualiiers to
-annotate for the field.</li>
-<li><strong>position</strong> &#8211;
-the position in the model to extract the data.</li>
+annotate for the field.</p></li>
+<li><p><strong>position</strong> – the position in the model to extract the data.</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>annotationString</strong> &#8211;
-The annotation String to be put into the SBML.</li>
-<li><strong>notes</strong> &#8211;
-A 2*x cell array of fields which did not contain
-valid identifiers (according to the pattern check.</li>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><p><strong>mergeAnnotations</strong> – If multiple fields are given, merge the fields and
+only produce one annotation.</p>
+</dd>
+<dt class="field-even">OUTPUT</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>annotationString</strong> – The annotation String to be put into the SBML.</p></li>
+<li><p><strong>notes</strong> – A 2*x cell array of fields which did not contain
+valid identifiers (according to the pattern check.</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.utilities.SBML.mapAnnotationsToFields">
-<code class="descname">mapAnnotationsToFields</code><span class="sig-paren">(</span><em>model</em>, <em>databases</em>, <em>identifiers</em>, <em>relations</em>, <em>field</em>, <em>relationSelection</em>, <em>inverseRelationSelection</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/mapAnnotationsToFields.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.mapAnnotationsToFields" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.mapAnnotationsToFields">
+<span class="sig-name descname"><span class="pre">mapAnnotationsToFields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">databases</span></em>, <em class="sig-param"><span class="pre">identifiers</span></em>, <em class="sig-param"><span class="pre">relations</span></em>, <em class="sig-param"><span class="pre">field</span></em>, <em class="sig-param"><span class="pre">relationSelection</span></em>, <em class="sig-param"><span class="pre">inverseRelationSelection</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/mapAnnotationsToFields.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.mapAnnotationsToFields" title="Permalink to this definition">¶</a></dt>
 <dd><p>MAPANNOTATIONSTOFIELDS maps annotations in bioql/MIRIAM annotation from SBML to model fields.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>mappedFields = mapAnnotationsToFields(model,databases,identifiers,relations,field,relationSelection, exclusiveSelection)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-the COBRA model to annotate</li>
-<li><strong>databases</strong> &#8211;
-a cell array of cell arrays containing databases</li>
-<li><strong>identifiers</strong> &#8211;
-a cell array of cell arrays containing the identifiers
-associated with the databases above</li>
-<li><strong>relations</strong> &#8211;
-a cell array of cell arrays containing the bioql relations
-associated with the databases above</li>
-<li><strong>field</strong> &#8211;
-the model field (met/gene/rxn/protein/comp etc) to
-annotate. Note that there is an s missing here.</li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>mappedFields = mapAnnotationsToFields</strong> (<em>model,databases,identifiers,relations,field,relationSelection, exclusiveSelection</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – the COBRA model to annotate</p></li>
+<li><p><strong>databases</strong> – a cell array of cell arrays containing databases</p></li>
+<li><p><strong>identifiers</strong> – a cell array of cell arrays containing the identifiers
+associated with the databases above</p></li>
+<li><p><strong>relations</strong> – a cell array of cell arrays containing the bioql relations
+associated with the databases above</p></li>
+<li><p><strong>field</strong> – the model field (met/gene/rxn/protein/comp etc) to
+annotate. Note that there is an s missing here.</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>relationSelection</strong> &#8211;
-whether only a specific relation is choosen
-and all others are ignored (default {})</li>
-<li><strong>inverseRelationSelection</strong> &#8211;
-whether the relation specified by
+</dd>
+<dt class="field-odd">OPTIONAL INPUT</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>relationSelection</strong> – whether only a specific relation is choosen
+and all others are ignored (default {})</p></li>
+<li><p><strong>inverseRelationSelection</strong> – whether the relation specified by
 relationSelection is inverted (i.e. all
-other fields are used (default true))</li>
+other fields are used (default true))</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>mappedFields</strong> &#8211;
-a struct with fields for each encountered
+</dd>
+<dt class="field-even">OUTPUT</dt>
+<dd class="field-even"><p><strong>mappedFields</strong> – a struct with fields for each encountered
 annotation database (Known databases like e.g.
 HMDB will be mapped to their corresponding field
 metHMDBID, while unknown fields will be mapped
-to: [field relation convertSBMLID(database)]</li>
-</ul>
-</div></blockquote>
+to: [field relation convertSBMLID(database)]</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.base.io.utilities.SBML.parseCVTerms">
-<code class="descname">parseCVTerms</code><span class="sig-paren">(</span><em>CVTerms</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/base/io/utilities/SBML/parseCVTerms.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.base.io.utilities.SBML.parseCVTerms" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.base.io.utilities.SBML.parseCVTerms">
+<span class="sig-name descname"><span class="pre">parseCVTerms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">CVTerms</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/base/io/utilities/SBML/parseCVTerms.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.base.io.utilities.SBML.parseCVTerms" title="Permalink to this definition">¶</a></dt>
 <dd><p>parseCVTerms extracts the annotations deposited in cvterms in an SBML struct</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[databases, identifiers, relations] = parseCVTerms(CVTerms)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>CVTerms</strong> &#8211;
-the CVTerms field of an SBML model field</li>
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>[databases, identifiers, relations] = parseCVTerms</strong> (<em>CVTerms</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>CVTerms</strong> – the CVTerms field of an SBML model field</p>
+</dd>
+<dt class="field-odd">OUTPUT</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>databases</strong> – the databases stored in the ressources of the CVTerms.</p></li>
+<li><p><strong>identifiers</strong> – The identifiers annotated for the databases.</p></li>
+<li><p><strong>relations</strong> – The bio-qualifier relation encoded in the CVTerms.</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>databases</strong> &#8211;
-the databases stored in the ressources of the CVTerms.</li>
-<li><strong>identifiers</strong> &#8211;
-The identifiers annotated for the databases.</li>
-<li><strong>relations</strong> &#8211;
-The bio-qualifier relation encoded in the CVTerms.</li>
-</ul>
-</div></blockquote>
+</dd>
+</dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -459,7 +406,7 @@ The bio-qualifier relation encoded in the CVTerms.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../solvers/index.html" class="btn btn-default float-right" title="Solvers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../old/index.html" class="btn btn-default float-right" title="Old" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-default" title="Utilities" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -471,7 +418,7 @@ The bio-qualifier relation encoded in the CVTerms.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -499,10 +446,12 @@ The bio-qualifier relation encoded in the CVTerms.</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -521,5 +470,14 @@ The bio-qualifier relation encoded in the CVTerms.</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

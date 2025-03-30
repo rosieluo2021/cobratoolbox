@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Transcriptomics &mdash; The COBRA Toolbox</title>
@@ -57,15 +58,19 @@
   
 
   
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../index.html"/>
-        <link rel="up" title="Data integration" href="../index.html"/>
-        <link rel="next" title="FASTCORE" href="FASTCORE/index.html"/>
-        <link rel="prev" title="Metabotools" href="../metabotools/index.html"/> 
+        <link rel="up" title="Dataintegration" href="../index.html"/>
+        <link rel="next" title="Eflux" href="eFlux/index.html"/>
+        <link rel="prev" title="Metanetxmapper" href="../metanetxMapper/index.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../index.html">
+            <a href="../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,19 +158,25 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../base/index.html">Base</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Data integration</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../chemoInformatics/index.html">ChemoInformatics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Dataintegration</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../fluxomics/index.html">Fluxomics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../metanetxMapper/index.html">Metanetxmapper</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Transcriptomics</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="FASTCORE/index.html">FASTCORE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="MBA/index.html">MBA</a></li>
-<li class="toctree-l4"><a class="reference internal" href="GIMME/index.html">GIMME</a></li>
-<li class="toctree-l4"><a class="reference internal" href="INIT/index.html">INIT</a></li>
-<li class="toctree-l4"><a class="reference internal" href="iMAT/index.html">iMAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eFlux/index.html">Eflux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="INIT/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MBA/index.html">Mba</a></li>
+<li class="toctree-l4"><a class="reference internal" href="iMAT/index.html">Imat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FASTCORE/index.html">Fastcore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MOOMIN/index.html">Moomin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GIMME/index.html">Gimme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SWIFTCORE/index.html">Swiftcore</a></li>
 <li class="toctree-l4"><a class="reference internal" href="preprocessing/index.html">Preprocessing</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../chemoInformatics/index.html">Chemoinformatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../XomicsToModel/index.html">Xomicstomodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../metaboAnnotator/index.html">Metaboannotator</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../design/index.html">Design</a></li>
@@ -179,6 +191,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -200,217 +215,197 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../index.html">Data integration</a> &raquo;</li>
-        
-      <li>Transcriptomics</li>
-    
-    
+      <li><a href="../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Dataintegration</a></li>
+      <li class="breadcrumb-item active">Transcriptomics</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="transcriptomics">
-<span id="id1"></span><h1>Transcriptomics<a class="headerlink" href="#transcriptomics" title="Permalink to this headline">¶</a></h1>
+  <section id="transcriptomics">
+<span id="id1"></span><h1>Transcriptomics<a class="headerlink" href="#transcriptomics" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="FASTCORE/index.html">FASTCORE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MBA/index.html">MBA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GIMME/index.html">GIMME</a></li>
-<li class="toctree-l1"><a class="reference internal" href="INIT/index.html">INIT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="iMAT/index.html">iMAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eFlux/index.html">Eflux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="INIT/index.html">Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MBA/index.html">Mba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iMAT/index.html">Imat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FASTCORE/index.html">Fastcore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MOOMIN/index.html">Moomin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GIMME/index.html">Gimme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SWIFTCORE/index.html">Swiftcore</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preprocessing/index.html">Preprocessing</a></li>
 </ul>
 </div>
-<span class="target" id="module-src.dataIntegration.transcriptomics"></span><dl class="function">
-<dt id="src.dataIntegration.transcriptomics.createTissueSpecificModel">
-<code class="descname">createTissueSpecificModel</code><span class="sig-paren">(</span><em>model</em>, <em>options</em>, <em>funcModel</em>, <em>exRxnRemove</em>, <em>optionalParams</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/transcriptomics/createTissueSpecificModel.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.createTissueSpecificModel" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-src.dataIntegration.transcriptomics"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.transcriptomics.createTissueSpecificModel">
+<span class="sig-name descname"><span class="pre">createTissueSpecificModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">options</span></em>, <em class="sig-param"><span class="pre">funcModel</span></em>, <em class="sig-param"><span class="pre">exRxnRemove</span></em>, <em class="sig-param"><span class="pre">optionalParams</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/transcriptomics/createTissueSpecificModel.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.createTissueSpecificModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates draft tissue specific model from mRNA expression data</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>tissueModel = createTissueSpecificModel(model, options)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-model strusture</li>
-</ul>
+<dl class="field-list">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>tissueModel = createTissueSpecificModel</strong> (<em>model, options</em>)</p>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><p><strong>model</strong> – model strusture</p>
+<dl>
+<dt>options:                 structure field containing method specific</dt><dd><blockquote>
+<div><p>informations</p>
 </div></blockquote>
-<dl class="docutils">
-<dt>options:                 structure field containing method specific</dt>
-<dd><blockquote class="first">
-<div>informations</div></blockquote>
-<dl class="docutils">
-<dt>.solver:                 Use either &#8216;GIMME&#8217;,&#8217;iMAT&#8217;,&#8217;INIT&#8217;,&#8217;MBA&#8217;,</dt>
-<dd>&#8216;mCADRE&#8217;,&#8217;fastCore&#8217;</dd>
-</dl>
-<p class="last">.additionalparam:        see NOTE section below</p>
+<dl class="simple">
+<dt>.solver:                 Use either ‘GIMME’,’iMAT’,’INIT’,’MBA’,</dt><dd><p>‘mCADRE’,’fastCore’,’swiftcore’</p>
 </dd>
 </dl>
+<p>. ‘additional parameters’:        see section below entiteld OPTIONAL INPUTS SPECIFIC TO EACH MODEL EXTRACTION ALGORITHM</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul>
+<li><dl>
+<dt><strong>funcModel</strong> – 1 - Build a functional model having only reactions</dt><dd><blockquote>
+<div><p>that can carry a flux (using a consistency check), 0 - skip this
+step (Default = 0)</p>
 </div></blockquote>
-<p><strong>Optional inputs</strong></p>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
-<li><strong>funcModel</strong> &#8211;
-1 - Build a functional model having only reactions
-that can carry a flux (using a consistency check), 0 - skip this
-step (Default = 0)</li>
-<li><strong>exRxnRemove</strong> &#8211;
-Names of exchange reactions to remove
-(Default = [])</li>
+<ul class="simple">
+<li><p><strong>exRxnRemove</strong> – Names of exchange reactions to remove
+(Default = [])</p></li>
 </ul>
-</div></blockquote>
-<dl class="docutils">
-<dt>optionalParams           Additional paramaters for the consistency</dt>
-<dd>check. Will only be used if funcModel = 1
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="simple">
+<dt>optionalParams           Additional paramaters for the consistency</dt><dd><p>check. Will only be used if funcModel = 1
 Is a structure with possible fields of epsilon
 (numeric, min nonzero mass), modeFlag (return
-flux mode, 0/1), and method (&#8216;fastcc&#8217;,&#8217;dc&#8217;)</dd>
+flux mode, 0/1), and method (‘swiftcc’,’fastcc’,’dc’)</p>
+</dd>
 </dl>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>tissueModel</strong> &#8211;
-extracted model</li>
-</ul>
-</div></blockquote>
-<p>NOTES:
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><p><strong>tissueModel</strong> – extracted model</p>
+</dd>
+</dl>
+<p>OPTIONAL INPUTS SPECIFIC TO EACH MODEL EXTRACTION ALGORITHM:
 This section describes the additional parameter fields that need to be set in
-&#8216;options&#8217; structure depending on the solver used. Some of these
-are optional (marked by an &#8216;*&#8217;), if not defined, they will be set at their
+‘options’ structure depending on the solver used. Some of these
+are optional (marked by an ‘*’), if not defined, they will be set at their
 default values.</p>
 <blockquote>
 <div><blockquote>
-<div><dl class="docutils">
-<dt>for iMAT</dt>
-<dd><dl class="first docutils">
-<dt>options.expressionRxns       reaction expression, expression data corresponding to model.rxns.</dt>
-<dd>Note : If no gene-expression data are
-available for the reactions, set the value to -1</dd>
-<dt>options.threshold_lb         lower bound of expression threshold, reactions with</dt>
-<dd>expression below this value are &#8220;non-expressed&#8221;</dd>
-<dt>options.threshold_ub         upper bound of expression threshold, reactions with</dt>
-<dd>expression above this value are
-&#8220;expressed&#8221;</dd>
-<dt>options.tol*                 minimum flux threshold for &#8220;expressed&#8221; reactions</dt>
-<dd>(default 1e-8)</dd>
-<dt>options.core*                cell with reaction names (strings) that are manually put in</dt>
-<dd>the high confidence set (default - no core reactions)</dd>
+<div><dl>
+<dt>for iMAT</dt><dd><dl class="simple">
+<dt>options.expressionRxns       reaction expression, expression data corresponding to model.rxns.</dt><dd><p>Note : If no gene-expression data are
+available for the reactions, set the value to -1</p>
+</dd>
+<dt>options.threshold_lb         lower bound of expression threshold, reactions with</dt><dd><p>expression below this value are “non-expressed”</p>
+</dd>
+<dt>options.threshold_ub         upper bound of expression threshold, reactions with</dt><dd><p>expression above this value are
+“expressed”</p>
+</dd>
+<dt>options.tol*                 minimum flux threshold for “expressed” reactions</dt><dd><p>(default 1e-8)</p>
+</dd>
+<dt>options.core*                cell with reaction names (strings) that are manually put in</dt><dd><p>the high confidence set (default - no core reactions)</p>
+</dd>
 </dl>
-<p>options.logfile*             name of the file to save the MILP log (defaut - &#8216;MILPlog&#8217;)
+<p>options.logfile*             name of the file to save the MILP log (defaut - ‘MILPlog’)
 options.runtime*             maximum solve time for the MILP (default - 7200s)
 options.epsilon*             small value to consider when modeling</p>
-<blockquote class="last">
-<div>flux (default 1)</div></blockquote>
+<blockquote>
+<div><p>flux (default 1)</p>
+</div></blockquote>
 </dd>
 </dl>
 </div></blockquote>
-<dl class="docutils">
-<dt>for GIMME</dt>
-<dd><dl class="first docutils">
-<dt>options.expressionRxns       reaction expression, expression data corresponding to model.rxns.</dt>
-<dd>Note : If no gene-expression data are
+<dl>
+<dt>for GIMME</dt><dd><dl class="simple">
+<dt>options.expressionRxns       reaction expression, expression data corresponding to model.rxns.</dt><dd><p>Note : If no gene-expression data are
 available for the reactions, set the
-value to -1</dd>
+value to -1</p>
+</dd>
 </dl>
 <p>options.threshold            expression threshold, reactions below this are minimized
 options.obj_frac*            minimum fraction of the model objective function</p>
-<blockquote class="last">
-<div>(default - 0.9)</div></blockquote>
+<blockquote>
+<div><p>(default - 0.9)</p>
+</div></blockquote>
 </dd>
-<dt>for INIT</dt>
-<dd><dl class="first docutils">
-<dt>options.weights              column with positive (high expression) and negative</dt>
-<dd>(low expression) weights for each reaction</dd>
-<dt>options.tol*                 minimum flux threshold for &#8220;expressed&#8221; reactions</dt>
-<dd><blockquote class="first">
-<div>(default  - 1e-8)</div></blockquote>
-<p class="last">options.logfile*             name of the file to save the MILP log (defaut - &#8216;MILPlog&#8217;)</p>
+<dt>for INIT</dt><dd><dl>
+<dt>options.weights              column with positive (high expression) and negative</dt><dd><p>(low expression) weights for each reaction</p>
+</dd>
+<dt>options.tol*                 minimum flux threshold for “expressed” reactions</dt><dd><blockquote>
+<div><p>(default  - 1e-8)</p>
+</div></blockquote>
+<p>options.logfile*             name of the file to save the MILP log (defaut - ‘MILPlog’)</p>
 </dd>
 </dl>
 <p>options.runtime*             maximum solve time for the MILP (default - 7200s)
 options.epsilon*             small value to consider when modeling</p>
-<blockquote class="last">
-<div>flux (default 1)</div></blockquote>
+<blockquote>
+<div><p>flux (default 1)</p>
+</div></blockquote>
 </dd>
-<dt>for MBA</dt>
-<dd><p class="first">options.medium_set           list of reaction names with medium confidence
+<dt>for MBA</dt><dd><p>options.medium_set           list of reaction names with medium confidence
 options.high_set             list of reaction names with high confidence
-options.tol*                 minimum flux threshold for &#8220;expressed&#8221; reactions</p>
-<blockquote class="last">
-<div>(default - 1e-8)</div></blockquote>
+options.tol*                 minimum flux threshold for “expressed” reactions</p>
+<blockquote>
+<div><p>(default - 1e-8)</p>
+</div></blockquote>
 </dd>
-<dt>for mCADRE</dt>
-<dd><dl class="first last docutils">
-<dt>options.ubiquityScore        ubiquity scores, vector of the size of &#8216;model.rxns&#8217;</dt>
-<dd>quantifying how often a gene is expressed accross samples.</dd>
-<dt>options.confidenceScores     literature-based evidence for generic model,</dt>
-<dd>vector of the size of &#8216;model.rxns&#8217;</dd>
-<dt>options.protectedRxns*       cell array with reactions names that are manually added to</dt>
-<dd>the core reaction set (default- no reactions)</dd>
-<dt>options.checkFunctionality*  Boolean variable that determine if the model should be able</dt>
-<dd><dl class="first last docutils">
-<dt>to produce the metabolites associated with the protectedRxns</dt>
-<dd>0: don&#8217;t use functionality check (default value)
-1: include functionality check</dd>
-</dl>
+<dt>for mCADRE</dt><dd><dl class="simple">
+<dt>options.ubiquityScore        ubiquity scores, vector of the size of ‘model.rxns’</dt><dd><p>quantifying how often a gene is expressed accross samples.</p>
 </dd>
-<dt>options.eta*                 tradeoff between removing core and zero-expression</dt>
-<dd>reactions (default - 1/3)</dd>
-<dt>options.tol*                 minimum flux threshold for &#8220;expressed&#8221; reactions</dt>
-<dd>(default - 1e-8)</dd>
-</dl>
+<dt>options.confidenceScores     literature-based evidence for generic model,</dt><dd><p>vector of the size of ‘model.rxns’</p>
 </dd>
-<dt>for fastCore</dt>
-<dd><dl class="first docutils">
-<dt>options.core                 indices of reactions in cobra model that are part of the</dt>
-<dd>core set of reactions</dd>
-<dt>options.epsilon*             smallest flux value that is considered</dt>
-<dd>nonzero (default 1e-4)</dd>
-</dl>
-<p class="last">options.printLevel*          0 = silent, 1 = summary, 2 = debug (default 0)</p>
+<dt>options.protectedRxns*       cell array with reactions names that are manually added to</dt><dd><p>the core reaction set (default- no reactions)</p>
+</dd>
+<dt>options.checkFunctionality*  Boolean variable that determine if the model should be able</dt><dd><dl class="simple">
+<dt>to produce the metabolites associated with the protectedRxns</dt><dd><p>0: don’t use functionality check (default value)
+1: include functionality check</p>
 </dd>
 </dl>
+</dd>
+<dt>options.eta*                 tradeoff between removing core and zero-expression</dt><dd><p>reactions (default - 1/3)</p>
+</dd>
+<dt>options.tol*                 minimum flux threshold for “expressed” reactions</dt><dd><p>(default - 1e-8)</p>
+</dd>
+</dl>
+</dd>
+<dt>for fastCore</dt><dd><dl class="simple">
+<dt>options.core                 indices of reactions in cobra model that are part of the</dt><dd><p>core set of reactions</p>
+</dd>
+<dt>options.epsilon*             smallest flux value that is considered</dt><dd><p>nonzero (default getCobraSolverParams(‘LP’, ‘feasTol’)*100)</p>
+</dd>
+</dl>
+<p>options.printLevel*          0 = silent, 1 = summary, 2 = debug (default 0)</p>
+</dd>
+<dt>for swiftcore</dt><dd><dl class="simple">
+<dt>options.core                 indices of reactions in cobra model that are part of the</dt><dd><p>core set of reactions</p>
+</dd>
+</dl>
+<p>options.tol*                 smallest flux value that is considered nonzero (default 1e-10)
+options.reduction*           boolean enabling the metabolic network reduction preprocess
+options.weights*             weight vector for the penalties associated with each reaction
+options.LPsolver*            the LP solver to be used; the currently available options are</p>
+<blockquote>
+<div><p>‘gurobi’, ‘linprog’, and ‘cplex’ with the default value of
+‘gurobi’. It fallbacks to the COBRA LP solver interface if
+another supported solver is called or ‘gurobi’ is not available.</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>for thermoKernel</p>
 </div></blockquote>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -422,10 +417,10 @@ options.tol*                 minimum flux threshold for &#8220;expressed&#8221; 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="FASTCORE/index.html" class="btn btn-default float-right" title="FASTCORE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="eFlux/index.html" class="btn btn-default float-right" title="Eflux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../metabotools/index.html" class="btn btn-default" title="Metabotools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../metanetxMapper/index.html" class="btn btn-default" title="Metanetxmapper" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -434,7 +429,7 @@ options.tol*                 minimum flux threshold for &#8220;expressed&#8221; 
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -462,10 +457,12 @@ options.tol*                 minimum flux threshold for &#8220;expressed&#8221; 
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -484,5 +481,14 @@ options.tol*                 minimum flux threshold for &#8220;expressed&#8221; 
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>

@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Preprocessing &mdash; The COBRA Toolbox</title>
@@ -57,6 +58,10 @@
   
 
   
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../../_static/css/cobra.css" type="text/css" />
+  
 
   
         <link rel="index" title="Index"
@@ -64,8 +69,8 @@
         <link rel="search" title="Search" href="../../../../search.html"/>
     <link rel="top" title="The COBRA Toolbox" href="../../../../index.html"/>
         <link rel="up" title="Transcriptomics" href="../index.html"/>
-        <link rel="next" title="Design" href="../../../design/index.html"/>
-        <link rel="prev" title="iMAT" href="../iMAT/index.html"/> 
+        <link rel="next" title="Chemoinformatics" href="../../chemoInformatics/index.html"/>
+        <link rel="prev" title="Swiftcore" href="../SWIFTCORE/index.html"/> 
 
   
   <script src="../../../../_static/js/modernizr.min.js"></script>
@@ -83,14 +88,15 @@
           
 
           
-            <a href="../../../../index.html">
+            <a href="../../../../index.html" class="icon icon-home"> The COBRA Toolbox
           
 
           
-            
-            <img src="https://king.nuigalway.ie/cobratoolbox/img/logo.png" class="logo" alt="logo"/>
+            <img src="https://king.nuigalway.ie/cobratoolbox/img/cobratoolbox_logo_transparent.png" class="logo" alt="cobratoolbox logo" />
           
           </a>
+
+              
           <h1>The COBRA Toolbox</h1>
 
           
@@ -152,19 +158,25 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Functions</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../analysis/index.html">Analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../base/index.html">Base</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Data integration</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../../chemoInformatics/index.html">ChemoInformatics</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">Dataintegration</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../fluxomics/index.html">Fluxomics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../metanetxMapper/index.html">Metanetxmapper</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../index.html">Transcriptomics</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="../FASTCORE/index.html">FASTCORE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../MBA/index.html">MBA</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../GIMME/index.html">GIMME</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../INIT/index.html">INIT</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../iMAT/index.html">iMAT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../eFlux/index.html">Eflux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../INIT/index.html">Init</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../MBA/index.html">Mba</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../iMAT/index.html">Imat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../FASTCORE/index.html">Fastcore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../MOOMIN/index.html">Moomin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../GIMME/index.html">Gimme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../SWIFTCORE/index.html">Swiftcore</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Preprocessing</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../chemoInformatics/index.html">Chemoinformatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../XomicsToModel/index.html">Xomicstomodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../metabotools/index.html">Metabotools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../metaboAnnotator/index.html">Metaboannotator</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../design/index.html">Design</a></li>
@@ -179,6 +191,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plan.html">Development Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../citations.html">Citations</a></li>
 </ul>
 
           
@@ -200,220 +215,203 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../contents.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../../../index.html">Functions</a> &raquo;</li>
-        
-          <li><a href="../../index.html">Data integration</a> &raquo;</li>
-        
-          <li><a href="../index.html">Transcriptomics</a> &raquo;</li>
-        
-      <li>Preprocessing</li>
-    
-    
+      <li><a href="../../../../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Functions</a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Dataintegration</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Transcriptomics</a></li>
+      <li class="breadcrumb-item active">Preprocessing</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="https://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="preprocessing">
-<span id="id1"></span><h1>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-src.dataIntegration.transcriptomics.preprocessing"></span><dl class="function">
-<dt id="src.dataIntegration.transcriptomics.preprocessing.GPRparser">
-<code class="descname">GPRparser</code><span class="sig-paren">(</span><em>model</em>, <em>getCNFSets</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/transcriptomics/preprocessing/GPRparser.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.GPRparser" title="Permalink to this definition">¶</a></dt>
+  <section id="preprocessing">
+<span id="id1"></span><h1>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">¶</a></h1>
+<span class="target" id="module-src.dataIntegration.transcriptomics.preprocessing"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.transcriptomics.preprocessing.GPRparser">
+<span class="sig-name descname"><span class="pre">GPRparser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">getCNFSets</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/transcriptomics/preprocessing/GPRparser.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.GPRparser" title="Permalink to this definition">¶</a></dt>
 <dd><p>Maps the GPR rules of the model to a specified format that is used by
 the model extraction methods</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>parsedGPR = GPRparser(model)</div></blockquote>
-<p><strong>Input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-cobra model structure</li>
-</ul>
-</div></blockquote>
-<p><strong>Optional input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>getCNFSets</strong> &#8211;
-whether to get the CNF sets (true) or DNF sets (false).
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><p><strong>parsedGPR = GPRparser</strong> (<em>model</em>)</p>
+</dd>
+<dt class="field-even">INPUT</dt>
+<dd class="field-even"><p><strong>model</strong> – cobra model structure</p>
+</dd>
+<dt class="field-odd">OPTIONAL INPUT</dt>
+<dd class="field-odd"><p><strong>getCNFSets</strong> – whether to get the CNF sets (true) or DNF sets (false).
 DNF sets represent functional enzyme complexes, while
 CNF sets represent the possible subunits of a complex.
-(default: false , i.e. DNF sets)</li>
-</ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>parsedGPR</strong> &#8211;
-cell matrix containing parsed GPR rule</li>
-</ul>
-</div></blockquote>
+(default: false , i.e. DNF sets)</p>
+</dd>
+<dt class="field-even">OUTPUT</dt>
+<dd class="field-even"><p><strong>parsedGPR</strong> – cell matrix containing parsed GPR rule</p>
+</dd>
+</dl>
 <p>AUTHORS: Thomas Pfau &amp; Anne Richelle, May 2017</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.dataIntegration.transcriptomics.preprocessing.findUsedGenesLevels">
-<code class="descname">findUsedGenesLevels</code><span class="sig-paren">(</span><em>model</em>, <em>exprData</em>, <em>printLevel</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/transcriptomics/preprocessing/findUsedGenesLevels.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.findUsedGenesLevels" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.transcriptomics.preprocessing.findUsedGenesLevels">
+<span class="sig-name descname"><span class="pre">findUsedGenesLevels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">exprData</span></em>, <em class="sig-param"><span class="pre">printLevel</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/transcriptomics/preprocessing/findUsedGenesLevels.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.findUsedGenesLevels" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns vectors of gene identifiers and corresponding gene expression
-levels for each gene present in the model (&#8216;model.genes&#8217;).</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[gene_id, gene_expr] = findUsedGenesLevels(model, exprData)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul>
-<li><p class="first"><strong>model</strong> &#8211;
-input model (COBRA model structure)</p>
-</li>
-<li><p class="first"><strong>exprData</strong> &#8211;
-mRNA expression data structure
+levels for each gene present in the model (‘model.genes’).</p>
+<dl class="field-list">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>[gene_id, gene_expr] = findUsedGenesLevels</strong> (<em>model, exprData</em>)</p></li>
+<li><p><strong>[gene_id, gene_expr, gene_sig] = findUsedGenesLevels</strong> (<em>model, exprData</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul>
+<li><p><strong>model</strong> – input model (COBRA model structure)</p></li>
+<li><p><strong>exprData</strong> – mRNA expression data structure
 .gene                cell array containing GeneIDs in the same</p>
 <blockquote>
 <div><p>format as model.genes</p>
 </div></blockquote>
-<p>.value               Vector containing corresponding expression value (FPKM)</p>
+<p>.value               Vector containing corresponding expression value (FPKM)
+.sig:                [optional field] Vector containing significance values of</p>
+<blockquote>
+<div><p>expression corresponding to expression values in exprData.value (ex. p-values)</p>
+</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
-<p><strong>Optional input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>printLevel</strong> &#8211;
-Printlevel for output (default 0);</li>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><p><strong>printLevel</strong> – Printlevel for output (default 0);</p>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>gene_id</strong> – vector of gene identifiers present in the model
+that are associated with expression data</p></li>
+<li><p><strong>gene_expr</strong> – vector of expression values associated to each
+‘gene_id’</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>gene_id</strong> &#8211;
-vector of gene identifiers present in the model
-that are associated with expression data</li>
-<li><strong>gene_expr</strong> &#8211;
-vector of expression values associated to each
-&#8216;gened_id&#8217;</li>
-</ul>
-</div></blockquote>
-<p>Authors: - S. Opdam &amp; A. Richelle May 2017</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>OPTIONAL OUTPUTS:</dt><dd><dl class="simple">
+<dt>gene_sig:             vector of significance values associated to each</dt><dd><p>‘gene_id’</p>
+</dd>
+</dl>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.dataIntegration.transcriptomics.preprocessing.mapExpressionToReactions">
-<code class="descname">mapExpressionToReactions</code><span class="sig-paren">(</span><em>model</em>, <em>expressionData</em>, <em>minSum</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/transcriptomics/preprocessing/mapExpressionToReactions.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.mapExpressionToReactions" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.transcriptomics.preprocessing.mapExpressionToReactions">
+<span class="sig-name descname"><span class="pre">mapExpressionToReactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">expressionData</span></em>, <em class="sig-param"><span class="pre">minSum</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/transcriptomics/preprocessing/mapExpressionToReactions.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.mapExpressionToReactions" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determines the expression data associated to each reaction present in
 the model</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>[expressionRxns parsedGPR] = mapExpressionToReactions(model, expressionData)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
-<li><strong>model                   model strusture</strong></li>
-<li><strong>expressionData          mRNA expression data structure</strong></li>
+<dl class="field-list">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>[expressionRxns parsedGPR, gene_used] = mapExpressionToReactions</strong> (<em>model, expressionData</em>)</p></li>
+<li><p><strong>[expressionRxns, parsedGPR, gene_used, signifRxns] =  mapExpressionToReactions</strong> (<em>model, expressionData, minSum</em>)</p></li>
 </ul>
-</div></blockquote>
-<dl class="docutils">
-<dt>.gene                    cell array containing GeneIDs in the same</dt>
-<dd>format as model.genes</dd>
-<dt>.value                  Vector containing corresponding expression</dt>
-<dd>value (FPKM/RPKM)</dd>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><dl class="simple">
+<dt><strong>model                   model strusture</strong></dt><dd><ul>
+<li><p><strong>expressionData          mRNA expression data structure</strong></p></li>
+</ul>
+</dd>
 </dl>
-</div></blockquote>
-<p><strong>Optional input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>minSum</strong> &#8211;
-instead of using min and max, use min for AND and Sum
-for OR (default: false, i.e. use min)</li>
+</li>
 </ul>
-</div></blockquote>
-<p><strong>Outputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>expressionRxns</strong> &#8211;
-reaction expression, corresponding to model.rxns.</li>
-<li><strong>parsedGPR</strong> &#8211;
-cell matrix containing parsed GPR rule</li>
+<dl class="simple">
+<dt>.gene                    cell array containing GeneIDs in the same</dt><dd><p>format as model.genes</p>
+</dd>
+<dt>.value                  Vector containing corresponding expression</dt><dd><p>value (FPKM/RPKM)</p>
+</dd>
+<dt>.sig:               [optional field] Vector containing significance values of</dt><dd><p>expression corresponding to expression values in
+expressionData.value (ex. p-values)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">OPTIONAL INPUT</dt>
+<dd class="field-odd"><p><strong>minSum</strong> – instead of using min and max, use min for AND and Sum
+for OR (default: false, i.e. use min)</p>
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>expressionRxns</strong> – n x 1 non-negative value for reaction expression, corresponding to model.rxns.
+expressionRxns(j) is NaN when there is no expression data for the genes corresponding to reaction j.</p></li>
+<li><p><strong>parsedGPR</strong> – cell matrix containing parsed GPR rule</p></li>
+<li><p><strong>gene_used</strong> – gene identifier, corresponding to model.rxns, from GPRs
+whose value (expression and/or significance) was chosen for that
+reaction</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+<dl class="simple">
+<dt>OPTIONAL OUTPUTS:</dt><dd><p>signifRxns:              significance of reaction expression, corresponding to model.rxns.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="src.dataIntegration.transcriptomics.preprocessing.selectGeneFromGPR">
-<code class="descname">selectGeneFromGPR</code><span class="sig-paren">(</span><em>model</em>, <em>gene_names</em>, <em>gene_exp</em>, <em>parsedGPR</em>, <em>minSum</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/efb2c06be702aaed38349581ba73ed420251992b/src/dataIntegration/transcriptomics/preprocessing/selectGeneFromGPR.m"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.selectGeneFromGPR" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="src.dataIntegration.transcriptomics.preprocessing.selectGeneFromGPR">
+<span class="sig-name descname"><span class="pre">selectGeneFromGPR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">model</span></em>, <em class="sig-param"><span class="pre">gene_names</span></em>, <em class="sig-param"><span class="pre">gene_exp</span></em>, <em class="sig-param"><span class="pre">parsedGPR</span></em>, <em class="sig-param"><span class="pre">minSum</span></em>, <em class="sig-param"><span class="pre">gene_sig</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/opencobra/cobratoolbox/blob/master/src/dataIntegration/transcriptomics/preprocessing/selectGeneFromGPR.m"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.dataIntegration.transcriptomics.preprocessing.selectGeneFromGPR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Map gene expression to reaction expression using the GPR rules. An AND
 will be replaced by MIN and an OR will be replaced by MAX.</p>
-<p><strong>Usage</strong></p>
-<blockquote>
-<div>expressionCol = selectGeneFromGPR(model, gene_names, gene_exp, parsedGPR, minMax)</div></blockquote>
-<p><strong>Inputs</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>model</strong> &#8211;
-COBRA model struct</li>
-<li><strong>gene_names</strong> &#8211;
-gene identifiers corresponding to gene_exp. Names must
+<dl class="field-list simple">
+<dt class="field-odd">USAGE</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>[expressionCol,  gene_used] = selectGeneFromGPR</strong> (<em>model, gene_names, gene_exp, parsedGPR, minSum</em>)</p></li>
+<li><p><strong>[expressionCol,  gene_used, signifCol] = selectGeneFromGPR</strong> (<em>model, gene_names, gene_exp, parsedGPR, minSum, gene_sig</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">INPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>model</strong> – COBRA model struct</p></li>
+<li><p><strong>gene_names</strong> – gene identifiers corresponding to gene_exp. Names must
 be in the same format as model.genes (column vector)
-(as returned by &#8220;findUsedGeneLevels.m&#8221;)</li>
-<li><strong>gene_exp</strong> &#8211;
-gene FPKM/expression values, corresponding to names (column vector)
-(as returned by &#8220;findUsedGeneLevels.m&#8221;)</li>
-<li><strong>parsedGPR</strong> &#8211;
-GPR matrix as returned by &#8220;GPRparser.m&#8221;</li>
+(as returned by “findUsedGeneLevels.m”)</p></li>
+<li><p><strong>gene_exp</strong> – gene FPKM/expression values, corresponding to names (column vector)
+(as returned by “findUsedGeneLevels.m”)</p></li>
+<li><p><strong>parsedGPR</strong> – GPR matrix as returned by “GPRparser.m”</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Optional input</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>minSum</strong> &#8211;
-instead of using min and max, use min for AND and Sum
-for OR</li>
+</dd>
+<dt class="field-odd">OPTIONAL INPUTS</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minSum</strong> – instead of using min and max, use min for AND and Sum
+for OR</p></li>
+<li><p><strong>gene_sig</strong> – vector of significance values associated to each
+‘gene_id’ (as returned by “findUsedGeneLevels.m”)</p></li>
 </ul>
-</div></blockquote>
-<p><strong>Output</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>expressionCol</strong> &#8211;
-reaction expression, corresponding to model.rxns.
+</dd>
+<dt class="field-even">OUTPUTS</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>expressionCol</strong> – reaction expression, corresponding to model.rxns.
 No gene-expression data and orphan reactions will
-be given a value of -1.</li>
+be given a value of NaN.</p></li>
+<li><p><strong>gene_used</strong> – gene identifier, corresponding to model.rxns, from GPRs
+whose value (expression and/or significance) was chosen for that
+reaction</p></li>
 </ul>
-</div></blockquote>
-<p>AUTHOR: Anne Richelle, May 2017</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>OPTIONAL OUTPUTS:</dt><dd><dl class="simple">
+<dt>signifCol:      reaction significance, corresponding to model.rxns.</dt><dd><p>No gene-expression data and orphan reactions will
+be given a value of 0.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
@@ -425,10 +423,10 @@ be given a value of -1.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../design/index.html" class="btn btn-default float-right" title="Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../chemoInformatics/index.html" class="btn btn-default float-right" title="Chemoinformatics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../iMAT/index.html" class="btn btn-default" title="iMAT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../SWIFTCORE/index.html" class="btn btn-default" title="Swiftcore" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -437,7 +435,7 @@ be given a value of -1.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017-2018, The COBRA Toolbox developers.
+        &copy; Copyright 2017-2021, The COBRA Toolbox developers.
 
     </p>
   </div>
@@ -465,10 +463,12 @@ be given a value of -1.</li>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+    <script type="text/javascript" src="../../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mathjax/MathJax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/sphinx_highlight.js"></script>
 
   
 
@@ -487,5 +487,14 @@ be given a value of -1.</li>
   </script>
    
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRCMZL1FKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TRCMZL1FKK');
+  </script>
+    
 </body>
 </html>
